@@ -88,6 +88,3 @@ layers:
   - RET
   - {type: held}
   - RALT
-combos:
-- p: [19, 20]
-  k: ESC

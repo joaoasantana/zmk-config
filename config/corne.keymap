@@ -13,15 +13,6 @@
 &led_strip { chain-length = <27>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        COMBO-ESC {
-            bindings = <&kp ESC>;
-            key-positions = <19 20>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
