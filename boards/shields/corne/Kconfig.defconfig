@@ -6,13 +6,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-# if SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
-
-# config ZMK_USB
-#     default y
-
-# endif
-
 endif
 
 if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT || SHIELD_CORNE_LEFT_PERIPHERAL || SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
@@ -28,15 +21,7 @@ config I2C
 config SSD1306
     default y
 
-if SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
-
-choice ZMK_DISPLAY_WORK_QUEUE
-    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
-endchoice
-
-endif
-
-endif # ZMK_DISPLAY
+endif 
 
 if LVGL
 
@@ -53,6 +38,6 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif # LVGL
+endif 
 
 endif

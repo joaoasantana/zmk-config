@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
+  BAS: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ESC, LGUI, LOW, SPACE, RET, RAI,
+    RALT]
   LOW:
-  - ↹
+  - TAB
   - '1'
   - '2'
   - '3'
@@ -14,23 +14,20 @@ layers:
   - '8'
   - '9'
   - '0'
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - ←
-  - ↓
-  - ↑
-  - →
+  - BSPC
+  - LCTRL
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -39,26 +36,29 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LGUI
   - {type: held}
-  - ␣
-  - ⏎
+  - SPACE
+  - RET
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - RALT
   RAI:
-  - ↹
+  - TAB
   - '!'
   - '@'
   - '#'
   - $
   - '%'
   - ^
-  - AMPS
+  - '&'
   - KP MULTIPLY
   - (
   - )
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
+  - BSPC
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -70,7 +70,7 @@ layers:
   - ']'
   - \
   - '`'
-  - $$mdi:apple-keyboard-shift$$
+  - LSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -82,9 +82,9 @@ layers:
   - '}'
   - '|'
   - '~'
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - '&studio_unlock'
-  - ␣
-  - ⏎
+  - SPACE
+  - RET
   - {t: '&studio_unlock', type: held}
-  - $$mdi:apple-keyboard-option$$
+  - RALT
